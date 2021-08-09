@@ -51,9 +51,7 @@ namespace HW_Delegate
             {
                 if (inWork == value)
                 {
-                    ForegroundColor = ConsoleColor.Red;
                     WriteLine("Wrong action");
-                    ResetColor();
                 }
                 else
                 {
@@ -67,15 +65,13 @@ namespace HW_Delegate
             if (inWork)
             {
                 WriteLine("Person at work");
-                ResetColor();
             }
             else
             {
                 WriteLine("Person not at work");
-                ResetColor();
             }
         }
-        public void Handler_ChangeLocation()
+        public void W_ChangeLocation()
         {
             if (inWork == true)
             {
